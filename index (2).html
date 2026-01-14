@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/project3.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+    <title>infinitiusa</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav style="background-image: url('Horizon_Graphic_PFA_INFINITI_Blue_1500.webp');background-position: bottom;background-size: 100% 100%;background-attachment: scroll; "
+                class="navbar navbar-expand-sm fixed-top top-0 end-0   p-4 border-bottom border-light  ">
+                <div class="container-fluid container-fluid-lg-8    ">
+                    <img class="me-2" src="Asset 5@72x.png"width="5%"height="5%"/>
+                    <a style="font-size: 20px; text-transform: uppercase; letter-spacing: 8px; border-right: 2px solid  rgb(191, 154, 80);color:rgb(255, 255, 255);"
+                        class="navbar-brand w-sm-25 ps-4 " href="">
+
+                        INFINITI
+                    </a>
+                    <button style="      border: 2px solid rgb(191, 154, 80);background-color:rgb(191, 154, 80);
+" class="navbar-toggler    " type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon fs-6  "></span>
+                    </button>
+                    <div class="collapse navbar-collapse      " id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="javascript:void(0)">Vehicles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="javascript:void(0)">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="javascript:void(0)">Retailer Locator</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="javascript:void(0)">Retailer Locator</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                    data-bs-toggle="dropdown">Build & Price</a>
+                                <ul class="dropdown-menu bg-light text-light" id="hover-ul">
+                                    <li><a class="dropdown-item" href="#">Vehicle Type</a></li>
+                                    <li><a class="dropdown-item " href="#">Vehicle Size</a></li>
+                                    <li><a class="dropdown-item" href="#">Features</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Engine Size</a></li>
+                                    <li><a class="dropdown-item" href="#">Price Range</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="javascript:void(0)">Owners</a>
+                            </li>
+                        </ul>
+
+
+                        <form class="d-flex justifiy-content-right   " id="search">
+                            <input class="form-control me-2 pe-5   " type="text" placeholder="Search" id="space-search">
+                            <!--<i class="fa-solid fa-magnifying-glass searchicon my-auto gap-3 pe-2 "></i>-->
+                            <button class="btn me-2 px-3 " type="button">Search</button>
+                            <button type="button" class="btn  ml-2  " data-bs-toggle="modal" data-bs-target="#myModal">
+                                login
+                            </button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </nav>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+
+                            <h4 class="modal-title">LOG IN</h4>
+
+                            <button type="button" class="btn-close text-dark" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="mb-3 mt-3">
+                                <label for="uname" class="form-label">Username:</label>
+                                <input type="text" class="form-control" id="uname" placeholder="Enter username"
+                                    name="uname" required>
+                                <div class="valid-feedback">Valid.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pwd" class="form-label">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                                    name="pswd" required>
+                                <div class="valid-feedback">Valid.</div>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+                                <label class="form-check-label" for="myCheck">remend me</label>
+                                <div class="valid-feedback">Valid.</div>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn  border-warning w-100"
+                                    data-bs-dismiss="modal">Log in</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+        </header>
+
+        <div id="demo" class="carousel slide w-100 " data-bs-ride="carousel" style=" height: 100vh">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators ">
+                <button style="        background-color: rgb(191, 154, 80);
+" type="button" data-bs-target="#demo" data-bs-slide-to="0" class="  active"></button>
+                <button style="        background-color: rgb(191, 154, 80);
+" type="button" data-bs-target="#demo" data-bs-slide-to="1" class="loop"></button>
+                <button style="        background-color: rgb(191, 154, 80);
+" type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button style="        background-color: rgb(191, 154, 80);
+" type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button style="        background-color: rgb(191, 154, 80);
+" type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                <button style="        background-color: rgb(191, 154, 80);
+" type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner  h-100">
+                <div class="carousel-item h-100 active">
+                    <img src="OFFERS_HUB_WINTERIZED_D.webp" alt="Chicago" class="d-block" style="width:100%">
+
+                    <div class="carousel-caption   ">
+                        <div style="background-color: rgba(240, 234, 203, 0.23) ;"
+                            class=" w-75 mx-auto  p-3 border border-light rounded overlay">
+                            <h3 style="letter-spacing: 5px ; color: rgb(191, 154, 80);
+">INFINITI</h3>
+                            <p>Experience flagship luxury <i style="color: #e3c790;margin-right: 4px;"
+                                    class="fa-solid fa-car "></i>that's ready to take you to new heights. Experience the
+                                boldly innovative 2026 INFINITI QX80.</p>
+                            <button type="button" class="btn   w-lg-25">contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100 w-100 w-sm-50 h-sm-50">
+                                        <img src="infiniti-qx-monograph-concept-luxury-suv-xl.webperahgty.webp" alt="Chicago" class="d-block" style="width:100%">
+
+                    <div class="carousel-caption">
+                        <div style="background-color: rgba(240, 234, 203, 0.23) "
+                            class=" w-75 mx-auto  p-3 border border-light rounded overlay">
+                            <h3 style="letter-spacing: 5px ;color:  rgb(191, 154, 80)">INFINITI</h3>
+
+                            <p>With retail purchase, <i style="color: #e3c790;margin-right: 4px;"
+                                    class="fa-solid fa-car "></i> get a QX60 SPORT $6,000 Holiday Bonus and QX80 SPORT
+                                $9,000 Holiday Bonus
+                            </p>
+                            <button type="button" class="btn  w-lg-25">contact us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item h-100">
+
+                    <img src="164.jpg" alt="Chicago" class="d-block " style="width:100%">
+                    <div class="carousel-caption">
+                        <div style="background-color: rgba(240, 234, 203, 0.23) "
+                            class=" w-75 mx-auto  p-3 border border-light rounded overlay">
+
+                            <h3 style="letter-spacing: 5px ;color: rgb(191, 154, 80)">INFINITI</h3>
+
+                            <p>With retail purchase, <i style="color: #e3c790;margin-right: 4px;"
+                                    class="fa-solid fa-car "></i> get a QX60 SPORT $6,000 Holiday Bonus and QX80 SPORT
+                                $9,000 Holiday Bonus</p>
+                            <button type="button" class="btn   w-lg-25">contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+
+                                            <img src="6434.webp" alt="Chicago" class="d-block " style="width:100%">
+
+
+
+                    <div class="carousel-caption">
+
+                        <div style="background-color: rgba(240, 234, 203, 0.23) "
+                            class="w-75 mx-auto  p-3 border border-light rounded overlay">
+
+                            <h3 style="letter-spacing: 5px ;color:  rgb(191, 154, 80)">INFINITI</h3>
+
+                            <p>Carefully crafted inside <i style="color: #e3c790;margin-right: 4px;"
+                                    class="fa-solid fa-car "></i> and out to offer a full-size luxury SUV experience
+                                that’s both capable and sophisticated.</p>
+                            <button type="button" class="btn  w-lg-25">contact us</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+
+                    <img src="2025-infiniti-qx50-interior-gear-shifter-v3-xl.webp" alt="New York" class="d-block "
+                        style="width:100%">
+                    <div class="carousel-caption">
+                        <div style="background-color: rgba(240, 234, 203, 0.23) "
+                            class=" w-75 mx-auto  p-3 border border-light rounded overlay">
+
+                            <h3 style="letter-spacing: 5px ;color: rgb(191, 154, 80)">INFINITI</h3>
+
+                            <p>Browse current local INFINITI purchase offers,<i
+                                    style="color: #e3c790;margin-right: 4px;" class="fa-solid fa-car "></i> lease
+                                specials and exclusive incentives.</p>
+                            <button type="button" class="btn   w-lg-25">contact us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item h-100">
+
+                    <img src="2026-infiniti-qx60-xl.jpg" alt="New York" class="d-block  " style="width:100%">
+                    <div class="carousel-caption">
+                        <div style="background-color: rgba(240, 234, 203, 0.23) "
+                            class=" w-75 mx-auto  p-3 border border-light rounded overlay">
+
+                            <h3 style="letter-spacing: 5px ;color:  rgb(191, 154, 80)">INFINITI</h3>
+
+                            <p>Your luxury—precisely the way that you want it.<i
+                                    style="color: #e3c790;margin-right: 4px;" class="fa-solid fa-car "></i> Explore all
+                                the different options, details and features that INFINITI
+                               </p>
+                            <button type="button" class="btn   w-lg-25 ">contact us</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon text-light"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <div
+                class="  icons1 d-flex flex-column position-fixed top-50 end-0 translate-middle-y me-3 icons gap-2 zindex-fixed ">
+                <a href="#" target="_blank"> <i class="fab fa-facebook-square      "></i></a>
+                <a href="" target="_blank"> <i class="fab fa-twitter-square   "></i></a>
+                <a href="" target="_blank"> <i class="fab fa-whatsapp-square   "></i></a>
+                <a href="" target="_blank"> <i class="fab fa-instagram-square   "></i></a>
+                <a href="" target="_blank"> <i class="fab fa-linkedin    "></i></a>
+
+            </div>
+
+
+    </main>
+    <section class="border-dark">
+        <div style="background-image: url('Horizon_Graphic_PFA_INFINITI_Blue_1500.webp');background-position: bottom;background-size: 100% 100%; background-attachment: scroll;"
+            class="container-fluid  p-4">
+            <h3 class="text-light"><b>Learn About QX55's Safety Technologies</b></h3>
+            <p class="text-light">
+                QX55 has your back on the road. Learn about QX55's safety technologies and discover how you will feel
+                confident behind
+                the wheel.
+                NFINITI vehicles are designed with a thoughtful eye toward welcoming, accommodating luxury – and we
+                carry that same
+                singular philosophy through to our award-winning ownership experience.
+
+            </p>
+            <button id="sec1" type="button" class="btn  rounded">
+                Explore Safety Technologies
+            </button>
+        </div>
+        <hr class="hr">
+        <div class="container-fluid  p-5 "
+            style="background-image: url('Horizon_Graphic_PFA_INFINITI_Blue_1500.webp');background-position: bottom;background-size: 100% 100%;background-attachment: scroll;">
+            <h4 class="text-light  text-center "><i><b>Buy or lease a new INFINITI today with appealing lease offers,
+                        specials, and incentives.</b></i></h4>
+        </div>
+        <div class="accordion " id="accordionExample">
+            <div class="accordion-item">
+                <div id="accordion" class="mt-4">
+                    <div class="accordion-header ">
+                        <button style="background-color: #efede9;font-size: 20px;font-weight: bold;"
+                            class="accordion-button btn-outline-warning collapsed text-dark p-4 " type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Inventory </button>
+
+                    </div>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="accordion"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body p-3 ">
+                            Find your INFINITI luxury crossover or SUV at a Retailer near you – explore our inventory
+                            today.
+                            <button id="sec1" type="button" class="btn  rounded">
+                                Explore Inventory
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+
+                    <div class="accordion-header ">
+                        <button style="background-color: #efede9;font-size: 20px;font-weight: bold;"
+                            class="accordion-button collapsed text-dark p-4" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+                            Offers
+                        </button>
+                    </div>
+
+                    <div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="accordion"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body p-3 ">
+                            Picture yourself behind the wheel of your next INFINITI with compelling local offers and
+                            incentives.
+                            <button id="sec1" type="button" class="btn  rounded">
+
+                                Explore Offers
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+
+                    <div class="accordion-header ">
+                        <button style="background-color: #efede9;font-size: 20px;font-weight: bold;"
+                            class="accordion-button collapsed text-dark p-4 " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+                            Certified Pre-Owned
+                        </button>
+
+
+                    </div>
+                    <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="accordion"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body p-3 ">
+
+                            Step into luxury with a Certified Pre-Owned crossover or SUV and start your journey down the
+                            Infinite Road today.
+                            <button id="sec1" type="button" class="btn  rounded">
+                                Explore Certified Pre-Owned
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="container-fluid  p-3 "
+            style="background-image: url('Horizon_Graphic_PFA_INFINITI_Blue_1500.webp');background-position: bottom;background-size: 100% 100%;background-attachment: scroll;">
+            <h4 class="text-light  text-center "><i><b>Information for Retailer In Arabic</b></i></h4>
+        </div>
+        <div class="container-fluid p-4 " style="background-image: url('Horizon_Graphic_PFA_INFINITI_Gold_1500.webp')">
+            <h4 class="pb-3">Write your Comments <span style="font-size: 20px;color: rgb(191, 154, 80);"
+                    class="ms-3 ">Press Here
+                </span></h4>
+            <button id="sec1" type="submit" class="btn rounded px-5 " data-toggle="modal" data-target="#yuModal">send</button>
+<div class="modal fade " id="yuModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Chat With An INFINITI Representative</h4>
+                <button type="button" class="close btn   fs-2" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body ">
+            We monitor and transcribe chats for quality purposes, in accordance with INFINITI’s
+            <a href="http://www.Infinitiusa.com/global/privacy.html" style="font-size:15px;color: #ae780b;" target="_blank">Privacy Notice.</a>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+            <form class="pt-4" action="/action_page.php">
+                <div class="form-group ">
+                    <textarea class="form-control" rows="5" id="comment" name="text"
+                        placeholder="Comments for Retailer"></textarea>
+                </div>
+            </form>
+        </div>
+
+        <hr class="hr">
+        <div class="container-fluid  p-3 "
+            style="background-image: url('Horizon_Graphic_PFA_INFINITI_Blue_1500.webp');background-position: bottom;background-size: 100% 100%;background-attachment:scroll;">
+            <h4 class="text-light  text-center "><i><b>Information for Retailer In English</b></i></h4>
+        </div>
+        <div class="container-fluid p-4 " style="background-image: url('Horizon_Graphic_PFA_INFINITI_Gold_1500.webp')">
+            <h4 class="pb-3">Write your Comments <span style="font-size: 20px;color: rgb(191, 154, 80);"
+                    class="ms-3 ">Press Here
+                </span></h4>
+            <button id="sec1" type="submit" class="btn rounded px-5 " data-toggle="modal" data-target="#yuModal">send</button>
+            <div class="modal fade " id="yuModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+            
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Chat With An INFINITI Representative</h4>
+                            <button type="button" class="close btn   fs-2" data-dismiss="modal">&times;</button>
+                        </div>
+            
+                        <!-- Modal body -->
+                        <div class="modal-body ">
+                            We monitor and transcribe chats for quality purposes, in accordance with INFINITI’s
+                            <a href="http://www.Infinitiusa.com/global/privacy.html" style="font-size:15px;color: #ae780b;"
+                                target="_blank">Privacy Notice.</a>
+                        </div>
+            
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+
+            <form class="pt-4" action="/action_page.php">
+                <div class="form-group ">
+                    <textarea class="form-control" rows="5" id="comment" name="text"
+                        placeholder="Comments for Retailer"></textarea>
+                </div>
+            </form>
+        </div>
+        <hr class="hr">
+        <div class="container-fluid  p-3 "
+            style="background-image: url('Horizon_Graphic_PFA_INFINITI_Blue_1500.webp');background-position: bottom;background-size: 100% 100%;background-attachment: scroll;">
+            <h4 class="text-light  text-center "><i><b>Information for Retailer In Franch</b></i></h4>
+        </div>
+        <div class="container-fluid p-4 " style="background-image: url('Horizon_Graphic_PFA_INFINITI_Gold_1500.webp')">
+            <h4 class="pb-3">Write your Comments <span style="font-size: 20px;color: rgb(191, 154, 80);"
+                    class="ms-2 ">Press Here
+                </span></h4>
+            <button id="sec1" type="submit" class="btn rounded px-5 " data-toggle="modal" data-target="#yuModal">send</button>
+            <div class="modal fade " id="yuModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+            
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Chat With An INFINITI Representative</h4>
+                            <button type="button" class="close btn   fs-2" data-dismiss="modal">&times;</button>
+                        </div>
+            
+                        <!-- Modal body -->
+                        <div class="modal-body ">
+                            We monitor and transcribe chats for quality purposes, in accordance with INFINITI’s
+                            <a href="http://www.Infinitiusa.com/global/privacy.html" style="font-size:15px;color: #ae780b;"
+                                target="_blank">Privacy Notice.</a>
+                        </div>
+            
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+
+            <form class="pt-4" action="/action_page.php">
+                <div class="form-group ">
+                    <textarea class="form-control " rows="5" id="comment" name="text"
+                        placeholder="Comments for Retailer"></textarea>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <div class="ball container-fluid d-none d-md-block  ">
+
+        </div>
+        <div class="ball11 container-fluid d-block d-md-none  ">
+
+        </div>
+
+
+    </section>
+    <section
+        style="background-image: url('Horizon_Graphic_PFA_INFINITI_Gold_1500.webp') ;background-repeat: no-repeat;;background-size: 200% 200%;">
+        <div class="container-fluid p-4 mt-5"
+            style="background-image: url('Horizon_Graphic_PFA_INFINITI_Blue_1500.webp');background-position: bottom;background-size: 100% 100%; ">
+            <h3 class="text-light  text-center"><i><b>Shop INFINITI NOW</b></i></h3>
+        </div>
+        <div class="container my-5">
+            <div class="row g-4 justify-content-center">
+                <div class="col-sm-4 col-11">
+                    <div class="card h-100 ui" style="box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);">
+                        <div class="card-header  ">
+                            <p>2025 INFINITI
+                                QX50</p>
+                            <div class="p-2">
+                                <img src="1img.webp" class="card-img-top" alt="..." style="height: 200px;">
+                            </div>
+                        </div>
+
+
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: slategray;"><b><i>Starting MSRP
+                                        $43,000</i></b></h5>
+                            <div class="d-flex">
+
+                                <a href="#" id="sec1" class="btn btn-warning  d-inline-block ms-auto px-4">Explore</a>
+                            </div>
+                            <p class="card-text mt-2">
+                                Crafted with precision – built entirely around you. Experience a luxury crossover SUV
+                                designed with innovation in mind
+                                behind the wheel of INFINITI QX50.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-11">
+                    <div class="card h-100 ui" style="box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);">
+                        <div class="card-header  ">
+                            <p>2025 INFINITI
+                                QX50</p>
+
+                            <div class="p-2">
+                                <img src="2img.webp" class="card-img-top" alt="..." style="height: 200px;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: slategray;"><b><i>Starting MSRP
+                                        $50,150
+                                    </i></b></h5>
+                            <div class="d-flex">
+                                <a href="#" id="sec1" class="btn btn-warning  d-inline-block ms-auto px-4">Explore</a>
+                            </div>
+                            <p class="card-text mt-2">
+                                The soul and sophistication of a crossover. The spirit and sport of a coupe. Discover
+                                something entirely distinct in the
+                                2025 INFINITI QX55. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-11">
+                    <div class="card h-100 ui" style="box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);">
+                        <div class="card-header  ">
+                            <p>2026 INFINITI
+                                QX50</p>
+
+                            <div class="p-2">
+                                <img src="3img.webp" class="card-img-top" alt="..." style="height: 200px;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: slategray;"><b><i>Starting MSRP
+                                        $51,590
+                                    </i></b></h5>
+                            <div class="d-flex">
+                                <a href="#" id="sec1" class="btn btn-warning  d-inline-block ms-auto px-4">Explore</a>
+                            </div>
+                            <p class="card-text mt-2">
+                                Step inside a three-row luxury crossover SUV that makes it a point to exceed your each
+                                and every expectation. Experience
+                                luxury that leads in the new 2026 INFINITI QX60.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-4 justify-content-center ">
+                <div class="col-sm-4 col-11 ">
+                    <div class="card h-100 ui" style="box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);">
+                        <div class="card-header  ">
+                            <p>2026 INFINITI
+                                QX50</p>
+
+                            <div class="p-2">
+                                <img src="4img.webp" class="card-img-top img-fluid" alt="..." style="height: 200px;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:rgb(191, 154, 80)"><b><i>
+                                        Starting MSRP
+                                        $83,750
+                                    </i></b></h5>
+                            <div class="d-flex">
+                                <a href="#" id="sec1" class="btn btn-warning d-inline-block ms-auto px-4">Explore</a>
+                            </div>
+                            <p class="card-text mt-2">
+                                Experience flagship luxury that's ready to take you to new heights. Experience the
+                                boldly innovative 2026 INFINITI QX80.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-11">
+                    <div class="card h-100 ui" style="box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);">
+                        <div class="card-header  ">
+                            <p>2025 INFINITI
+                                QX50</p>
+
+                            <div class="">
+                                <img src="7img.jpg" class="card-img-top img-fluid" alt="..." style="height: 200px;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(191, 154, 80)"><b><i>Starting MSRP
+                                        $76,750
+                                    </i></b></h5>
+                            <div class="d-flex">
+                                <a href="#" id="sec1" class="btn  d-inline-block ms-auto px-4">Explore</a>
+                            </div>
+                            <p class="card-text mt-2">
+                                The next generation of INFINITI is on the horizon. Enjoy an early look at four visionary
+                                new concept and future vehicles
+                                we have on the way, including the first all-electric INFINITI sedan. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-11">
+                    <div class="card h-100 ui" style="box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);">
+                        <div class="card-header  ">
+                            <p>2025 INFINITI
+                                QX50</p>
+
+                            <div class="">
+                                <img src="6img.jpg" class="card-img-top img-fluid" alt="..." style="height: 200px;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(191, 154, 80)"><b><i>Starting MSRP
+                                        $97,420
+                                    </i></b></h5>
+                            <div class="d-flex">
+                                <a href="#" id="sec1" class="btn btn-warning d-inline-block ms-auto px-4">Explore</a>
+                            </div>
+                            <p class="card-text mt-2">
+                                Your next INFINITI is looking great. Take a moment to finish designing your 2026 QX80
+                                and start driving the Infinite
+                                Road today. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 mt-4 justify-content-center">
+                <div class="col-sm-4 col-11 mb-5">
+                    <div class="card h-100 ui" style="box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);">
+                        <div class="card-header  ">
+                            <p>2025 INFINITI
+                                QX50</p>
+
+                            <div class="">
+                                <img src="5img.jpg" class="card-img-top img-fluid" alt="..." style="height: 200px;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:rgb(191, 154, 80)"><b><i>Starting MSRP
+                                        $52,930
+                                    </i></b></h5>
+                            <div class="d-flex">
+                                <a href="#" id="sec1" class="btn btn-warning  d-inline-block ms-auto px-4">Explore</a>
+                            </div>
+                            <p class="card-text mt-2">
+                                Find your model, choose your color and trim package, then add your accessories to build
+                                and price the INFINITI that's
+                                perfect for you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-11 mb-5">
+                    <div class="card h-100 ui" style="box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);">
+                        <div class="card-header  ">
+                            <p>2025 INFINITI
+                                QX50</p>
+
+                            <div class="">
+                                <img src="2026-infiniti-qx60-passenger-side-profile.jpg" class="card-img-top img-fluid"
+                                    alt="..." style="height: 200px;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(191, 154, 80)"><b><i>Starting MSRP
+                                        $12,110
+                                    </i></b></h5>
+                            <div class="d-flex">
+                                <a href="#" id="sec1" class="btn btn-warning  d-inline-block ms-auto px-4">Explore</a>
+                            </div>
+                            <p class="card-text mt-2">
+                                Proudly assembled in the USA, your new 2026 INFINITI QX60 is potentially eligible for a
+                                tax deduction of up to $10,000
+                                on annual interest paid.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="ball-2   container-fluid  d-none d-md-block   ">
+        </div>
+        <div class="ball-22   container-fluid  d-block d-md-none   ">
+        </div>
+
+        <hr>
+
+    </section>
+    <section class="min-vh-75"
+        style="background-image: url('Horizon_Graphic_PFA_INFINITI_Blue_1500.webp');background-position: bottom;background-size: 100% 100%;background-attachment: scroll">
+        <div class="container-fluid  m-auto  ">
+            <h3 class="text-light  text-center p-5 "><i><b>CONVENIENCE
+                        The Luxury of Time
+                    </b></i></h3>
+        </div>
+        <div class="container my-5     ">
+            <div style="gap:60px;" class="row  m-4    justify-content-center   ">
+                <div class="col-sm-3 col-10 img-bord    ">
+                    <a href="" target="_blank">
+
+                        <div class="card img-fluid overflow-hidden  pil-img  "
+                            style="width:300px ;border-radius:20px;height: 280px;border: 1px solid  #020b24">
+                            <div class="overlay">
+                                <img class="card-img-top " src="experience-infiniti-connected-services-1-t.webp"
+                                    alt="Card image" style="width:100%;height: 280px;">
+                            </div>
+                            <div class="card-img-overlay ">
+                                <h5 class="card-title  text-capitalize" style="color: rgb(211, 163, 68)">Premium
+                                    Connectivity at Your Command</h5>
+                                <h5 style="color: rgb(211, 163, 68);font-size: 15px;"
+                                    class="card-title text-capitalize">🕔 april 23,
+                                    2025</h5>
+                                <img src="experience-infiniti-connected-services-1-t.webp" alt="img/webp"
+                                    class="rounded-pill border border-2 border-white"
+                                    style="width: 80px; height: 100px;  object-fit:fill;">
+
+                                <p class="card-text text-light mt-1">
+                                    That's why INFINITI is pleased to include three
+                                    full years of our INFINITI
+                                </p>
+                            </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3 col-10 img-bord mb-5">
+                <a href="" target="_blank">
+                    <div class="card img-fluid overflow-hidden   pil-img"
+                        style="width:300px ;border-radius:20px;height: 280px;border: 1px solid  #020b24;">
+                        <div class="overlay">
+                            <img class="card-img-top " src="experience-infiniti-service-T.webp" alt="Card image"
+                                style="width:100%;height: 280px;">
+                        </div>
+                        <div class="card-img-overlay ">
+                            <h5 style="color: rgb(211, 163, 68);" class="card-title text-capitalize">An Elevated
+                                Maintenance Experience</h5>
+                            <h5 style="color: rgb(211, 163, 68);font-size: 15px;" class="card-title text-capitalize">🕔
+                                June 22, 2023
+                            </h5>
+                            <img src="experience-infiniti-service-T.webp" alt="img/webp"
+                                class="rounded-pill border border-2 border-white"
+                                style="width: 80px; height: 100px;  object-fit: fill;">
+
+                            <p class="card-text text-light mt-1">
+                                We've designed the INFINITI service experience to be as thoughtful and accommodating
+                                as possible.
+
+                            </p>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 col-10 img-bord  mb-5  ">
+                <a href="" target="_blank">
+
+                    <div class="card img-fluid overflow-hidden   pil-img "
+                        style="width:300px ;border-radius:20px;height: 280px;border: 1px solid #020b24 ;">
+                        <div class="overlay">
+                            <img class="card-img-top " src="infiniti-qx80-interior-3-row-family-suv-T.webp"
+                                alt="Card image" style="width:100%;height: 280px;">
+                        </div>
+                        <div class="card-img-overlay ">
+                            <h5 style="color: rgb(211, 163, 68);" class="card-title text-capitalize">INFINITI VALET
+                                White Glove Luxury</h5>
+                            <h5 style="color: rgb(211, 163, 68);font-size: 15px;" class="card-title text-capitalize">🕔
+                                June 22, 2023
+                            </h5>
+                            <img src="infiniti-qx80-interior-3-row-family-suv-T.webp" alt="img/webp"
+                                class="rounded-pill border border-2 border-white"
+                                style="width: 80px; height: 100px;  object-fit: fill;">
+
+                            <p class="card-text text-light mt-1 ">
+                                In the unlikely event that you find yourself in need of assistance while away on a
+                                trip
+
+                            </p>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <section
+        style="background-image: url('Horizon_Graphic_PFA_INFINITI_Gold_1500.webp') ;background-repeat: no-repeat;;background-size: 200% 200%;">
+        <h3 class="text-center" style="color: #020b24 ;margin-top: 100px;"><b><i>Experience INFINITI</i></b></h3>
+        <div class="container-md wider-container px-0 px-md-3" style="margin-top: 40px;">
+            <div class="card cardgh mb-3 w-100 px-2" style="box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);">
+                <div class="row g-0 h-100">
+                    <div class=" col-md-4 clip-slant order-1 order-md-2 d-none d-md-block yuis">
+                        <div class=" special-image1 min-vh-25 h-100 "> </div>
+                    </div>
+                    <div class="col-md-4 order-1 order-md-2 d-md-none d-block bmw ">
+                        <div class="special-image special-image1 "></div>
+                    </div>
+
+                    <div class="col-md-8 d-flex order-2 order-md-1">
+                        <div class="card-body my-auto">
+                            <h3 class="card-title  vui fs-3"><b><i>INFINITI Premium Care</i></b></h3>
+                            <p style="border-bottom:4px solid  #ae780b " class="card-text  d-inline-block  pb-2"
+                                style="font-size: 12px;">
+                                <b>Mon.May 25th 2025</b>
+                            </p>
+                            <p class="card-text fs-6 d-none d-md-block">
+                                Our commitment to owners is made clear through our definitive INFINITI Premium Care
+                                initiative, ensuring that your QX50
+                                ownership experience is one steeped in first-class ease and convenience.
+                                Discover vehicle care that puts hospitality and customer care first with INFINITI
+                                Premium Care: our select maintenance
+                                program for all new INFINITI vehicles that runs the length of your vehicle's designated
+                                mileage coverage — or up to 3
+                                years — whichever comes first.
+                            </p>
+                            <p class="card-text  d-md-none d-block" style="font-size: 13px;">
+                                Our commitment to owners is made clear through our definitive INFINITI Premium Care
+                                initiative, ensuring that your QX50
+                                ownership experience is one steeped in first-class ease and convenience.
+                                Discover vehicle care that puts hospitality and customer care first with INFINITI
+                                Premium Care: our select maintenance
+                                program for all new INFINITI vehicles that runs the length of your vehicle's designated
+                                mileage coverage — or up to 3
+                                years — whichever comes first.
+
+                            </p>
+                            <a href="#" id="sec1" class="btn  d-inline-block ms-auto px-2 mt-3  me-1 fs-6">🎙
+                                Podcast</a>
+                            <a href="#" id="sec1" class="btn  d-inline-block ms-auto px-2 mt-3  me-1 fs-6">🕔
+                                43 mins</a>
+                            <a href="#" id="sec1" class="btn  d-inline-block ms-auto px-2 mt-3  fs-6">▶
+                                Play
+                                Episode</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 w-100 px-2 "
+                style="box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);margin-top: 40px;">
+                <div class="row g-0 h-100">
+                    <div class="col-md-4 clip-slant order-1 order-md-1 d-none d-md-block aui  ">
+                        <div class=" special-image2 min-vh-25 h-100"></div>
+                    </div>
+                    <div class=" col-md-4 order-2 order-md-1 d-md-none d-block bmw ">
+                        <div class=" special-image special-image2 "></div>
+                    </div>
+                    <div class="col-md-8 d-flex order-2 order-md-1">
+                        <div class="card-body my-auto">
+                            <h3 class="card-title  vui fs-3"><b><i>Premium InTouch® Experience</i></b></h3>
+                            <p style="border-bottom:4px solid  #ae780b " class="card-text  d-inline-block  pb-2"
+                                style="font-size: 12px;">
+                                <b>Mon.May 25th 2026</b>
+                            </p>
+                            <p class="card-text fs-6 d-none d-md-block">
+                                Keep connected to what matters with INFINITI InTouch® – now featuring a three-year
+                                Premium service subscription on all
+                                new model year 2025 INFINITI vehicles equipped with InTouch® services.
+                                INFINITI InTouch unlocks the luxuries of navigation, security and remote convenience
+                                features, Wi-Fi hotspot, and
+                                entertainment—all in a single, innovative, in-dash system, if your vehicle is so
+                                equipped.
+
+                            </p>
+                            <p class="card-text  d-md-none d-block" style="font-size: 13px;">
+                                Keep connected to what matters with INFINITI InTouch® – now featuring a three-year
+                                Premium service subscription on all
+                                new model year 2025 INFINITI vehicles equipped with InTouch® services.
+                                INFINITI InTouch unlocks the luxuries of navigation, security and remote convenience
+                                features, Wi-Fi hotspot, and
+                                entertainment—all in a single, innovative, in-dash system, if your vehicle is so
+                                equipped.
+
+                            </p>
+                            <a href="#" id="sec1" class="btn d-inline-block ms-auto px-2 mt-3  me-1 fs-6">🎙
+                                Podcast</a>
+                            <a href="#" id="sec1" class="btn  d-inline-block ms-auto px-2 mt-3  me-1 fs-6">🕔
+                                43
+                                mins</a>
+                            <a href="#" id="sec1" class="btn d-inline-block ms-auto px-2 mt-3  fs-6">▶
+                                Play
+                                Episode</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 w-100 px-2" style="box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);">
+                <div class="row g-0 h-100">
+                    <div class=" col-md-4 clip-slant order-1 order-md-2 d-none d-md-block yuis">
+                        <div class="special-image special-image3 min-vh-25 h-100"></div>
+                    </div>
+                    <div class="col-md-4 order-1 order-md-2 d-md-none d-block bmw ">
+                        <div class="special-image special-image3 "></div>
+                    </div>
+
+                    <div class="col-md-8 d-flex order-2 order-md-1">
+                        <div class="card-body my-auto">
+                            <h3 class="card-title  vui fs-3"><b><i>Confidence-Inspiring Coverage</i></b></h3>
+                            <p style="border-bottom:4px solid  #ae780b " class="card-text  d-inline-block  pb-2"
+                                style="font-size: 12px;">
+                                <b>Mon.May 25th 2025</b>
+                            </p>
+                            <p class="card-text fs-6 d-none d-md-block">Enjoy the luxury of
+                                confidence knowing that your new QX50 comes with the peace of mind offered by standard
+                                INFINITI
+                                limited warranties – in addition to the added coverage available through our Elite
+                                Extended Protection plans.
+                                INFINITI Manuals and Warranties offer you in-depth details about your vehicle, giving
+                                you all the knowledge and
+                                resources you need to understand and care for your INFINITI.
+                            </p>
+                            <p class="card-text  d-md-none d-block" style="font-size: 13px;">
+                                Enjoy the luxury of
+                                confidence knowing that your new QX50 comes with the peace of mind offered by standard
+                                INFINITI
+                                limited warranties – in addition to the added coverage available through our Elite
+                                Extended Protection plans.
+                                INFINITI Manuals and Warranties offer you in-depth details about your vehicle, giving
+                                you all the knowledge and
+                                resources you need to understand and care for your INFINITI. </p>
+                            <a href="#" id="sec1" class="btn  d-inline-block ms-auto px-2 mt-3  me-1 fs-6">🎙
+                                Podcast</a>
+                            <a href="#" id="sec1" class="btn d-inline-block ms-auto px-2 mt-3  me-1 fs-6">🕔
+                                43 mins</a>
+                            <a href="#" id="sec1" class="btn  d-inline-block ms-auto px-2 mt-3  fs-6">▶
+                                Play
+                                Episode</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 w-100 px-2 "
+                style="box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);margin-top: 40px;">
+                <div class="row g-0 h-100">
+                    <div class="col-md-4 clip-slant order-1 order-md-1 d-none d-md-block aui ">
+                        <div class="special-image special-image4 min-vh-25 h-100"></div>
+                    </div>
+                    <div class="col-md-4 order-2 order-md-1 d-md-none d-block bmw  ">
+                        <div class="special-image special-image4 "></div>
+                    </div>
+                    <div class="col-md-8 d-flex order-2 order-md-1">
+                        <div class="card-body my-auto">
+                            <h3 class="card-title  vui fs-3"><b><i>We're There for You</i></b></h3>
+                            <p class="card-text d-inline-block   pb-2" style="border-bottom:4px solid  #ae780b "
+                                style="font-size: 12px;">
+                                <b>Mon.May 25th 2024</b>
+                            </p>
+                            <p class="card-text fs-6 d-none d-md-block">
+                                INFINITI’s available Roadside Assistance and Trip Interruption coverage means that you
+                                can travel in confidence knowing
+                                that everything from flat tire changes to emergency lodging and meals are covered for
+                                all new QX50 owners.
+                                At INFINITI, we're here for our owners. Contact us now for immediate Roadside Assistance
+                                – 24 hours a day, 365 days a
+                                year.
+                            </p>
+                            <p class="card-text  d-md-none d-block" style="font-size: 13px;">
+                                INFINITI’s available Roadside Assistance and Trip Interruption coverage means that you
+                                can travel in confidence knowing
+                                that everything from flat tire changes to emergency lodging and meals are covered for
+                                all new QX50 owners.
+                                At INFINITI, we're here for our owners. Contact us now for immediate Roadside Assistance
+                                – 24 hours a day, 365 days a
+                                year.
+
+                            </p>
+                            <a href="#" id="sec1" class="btn  d-inline-block ms-auto px-2 mt-3  me-1 fs-6">🎙
+                                Podcast</a>
+                            <a href="#" id="sec1" class="btn  d-inline-block ms-auto px-2 mt-3  me-1 fs-6">🕔
+                                43
+                                mins</a>
+                            <a href="#" id="sec1" class="btn  d-inline-block ms-auto px-2 mt-3  fs-6">▶
+                                Play
+                                Episode</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container w-75    " style="padding: 50px;">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card border-secondary special-card2"
+                        style="width: 10rem;box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);height: 180px;">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-6" style="color:slategray ;"><b
+                                    style="color: #ae780b;"><i>Subscribe Now</i></b></h4>
+                            <img src="Untitled.jpg" alt="" class="img-fluid "
+                                style=" width: 100px; height: 100px;margin-top: -5px;"><br>
+                            <a style="color: #071d5a;;" href="#" class="d-inline-block  ">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card border-secondary special-card2"
+                        style="width: 10rem; box-shadow: 7px 7px 10px 3px rgb(150, 150, 150); height: 180px;">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-6" style="color: slategray;">
+                                <b style="color: #ae780b;"><i>Subscribe Now</i></b>
+                            </h4>
+                            <img src="Untitled.png" alt="" class="img-fluid d-block mx-auto "
+                                style="width: 70px; height: 70px;margin-top: 16px; ">
+                            <a style="color: #071d5a;;" href="#" class="d-inline-block mt-3">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card border-secondary special-card2"
+                        style="width: 10rem; box-shadow: 7px 7px 10px 3px rgb(150, 150, 150); height: 180px;">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-6" style="color: slategray;">
+                                <b style="color: #ae780b;"><i>Subscribe Now</i></b>
+                            </h4>
+                            <img src="rwHRTHATY.png" alt="" class="img-fluid d-block mx-auto "
+                                style="width: 90px; height: 70px;margin-top: 16px; ">
+                            <a style="color: #071d5a;;" href="#" class="d-inline-block mt-3">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card border-secondary special-card2"
+                        style="width: 10rem; box-shadow: 7px 7px 10px 3px rgb(150, 150, 150); height: 180px;">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-6" style="color: slategray;">
+                                <b style="color: #ae780b;"><i>Subscribe Now</i></b>
+                            </h4>
+                            <img src="hj3fqjkrhkvgjq.png" alt="" class="img-fluid d-block mx-auto "
+                                style="width: 70px; height: 70px;margin-top: 16px; ">
+                            <a style="color: #071d5a;;" href="#" class="d-inline-block mt-3">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="min-vh-75"
+        style="background-image: url('Horizon_Graphic_PFA_INFINITI_Blue_1500.webp');background-position: bottom;background-size: 100% 100%;background-attachment: fixed;">
+        <div class="container-fluid " style="margin-top: 100px; ">
+            <br>
+            <hr style="background-color: white;color: white;height: 2px;">
+            <div class="container py-3 d-none d-sm-block">
+                <div class="row text-center align-items-center mb-2">
+                    <div class="col-sm-4 ">
+
+                        <i style="color: rgb(191, 154, 80)" class="fa-solid fa-magnifying-glass fs-1 "></i>
+
+                        <div class="fs-5" style="color:rgb(219, 231, 243); margin-top:10px;">
+                            <b><i>Search Inventory</i></b>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <i style="color: rgb(191, 154, 80)" class="fa-solid fa-magnifying-glass-location  fs-1"></i>
+                        <div class="fs-5" style="color:rgb(219, 231, 243); margin-top:10px;">
+                            <b><i>Contact Retailer</i></b>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <i style="color: rgb(191, 154, 80)" class="fa-solid fa-tag   fs-1"></i>
+                        <div class="fs-5" style="color:rgb(219, 231, 243); margin-top:10px;">
+                            <b><i>View Offers</i></b>
+                        </div>
+                    </div>
+                </div>
+                <hr style="border-color:#ffffff; margin: 8px 0;">
+                <div class="row text-center mt-2">
+                    <div class="col-sm-4">
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;"><a class="text-decoration-none text-light"
+                                href="" target="_blank"> Contact Us</a></p>
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;"> <a class="text-decoration-none text-light"
+                                href="" target="_blank">Site Map</a></p>
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;"><a class="text-decoration-none text-light"
+                                href="" target="_blank">Privacy Notice</a></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;"><a class="text-decoration-none text-light"
+                                href="" target="_blank">Accessibility</a></p>
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;"><a class="text-decoration-none text-light"
+                                href="" target="_blank">Terms of Use</a></p>
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;"> <a class="text-decoration-none text-light"
+                                href="" target="_blank"> Do not sell or share my personal information</a></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;"><a class="text-decoration-none text-light"
+                                href="" target="_blank"> INFINITI Worldwide</a></p>
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;"> <a class="text-decoration-none text-light"
+                                href="" target="_blank">Recall Information</a></p>
+                        <p style="color:rgb(219, 231, 243); margin:2px 0;"><a class="text-decoration-none text-light"
+                                href="" target="_blank"> Roadside Assistance - 1 (800) 835-0221</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-4 d-block d-sm-none">
+                <div class="row text-center mb-3">
+                    <div class="col-12">
+                        <i style="color:rgb(191, 154, 80)" class="fa-solid fa-magnifying-glass fs-1 "></i>
+
+                        <div class="fs-5" style="color:rgb(219, 231, 243); margin-top:10px;">
+                            <b><i>Search Inventory</i></b>
+                        </div>
+                        <p style="color:rgb(219, 231, 243); margin-top:8px;"> <a class="text-decoration-none text-light"
+                                href="" target="_blank">Contact Us</a></p>
+                        <p style="color:rgb(219, 231, 243);"> <a class="text-decoration-none text-light" href=""
+                                target="_blank">Site Map</a></p>
+                        <p style="color:rgb(219, 231, 243);"> <a class="text-decoration-none text-light" href=""
+                                target="_blank">Privacy Notice</a></p>
+                        <hr style="border-color:#5a6670;">
+                    </div>
+                </div>
+                <div class="row text-center mb-3">
+                    <div class="col-12">
+                        <i style="color: rgb(191, 154, 80);" class="fa-solid fa-magnifying-glass-location  fs-1"></i>
+
+                        <div class="fs-5" style="color:rgb(219, 231, 243); margin-top:10px;">
+                            <b><i>Contact Retailer</i></b>
+                        </div>
+                        <p style="color:rgb(219, 231, 243); margin-top:8px;"></p>
+                        <p style="color:rgb(219, 231, 243);"><a class="text-decoration-none text-light" href=""
+                                target="_blank"> Terms of Use</a></p>
+                        <p style="color:rgb(219, 231, 243);"><a class="text-decoration-none text-light" href=""
+                                target="_blank"> Do not sell or share my personal information</a></p>
+                        <hr style="border-color:#5a6670;">
+                    </div>
+                </div>
+                <div class="row text-center mb-3">
+                    <div class="col-12">
+                        <i style="color: rgb(191, 154, 80);" class="fa-solid fa-tag   fs-1"></i>
+
+                        <div class="fs-5" style="color:rgb(219, 231, 243); margin-top:10px;">
+                            <b><i>View Offers</i></b>
+                        </div>
+                        <p style="color:rgb(219, 231, 243); margin-top:8px;"> <a class="text-decoration-none text-light"
+                                href="" target="_blank">INFINITI Worldwide</a></p>
+                        <p style="color:rgb(219, 231, 243);"> <a class="text-decoration-none text-light" href=""
+                                target="_blank"> Recall Information</a></p>
+                        <p style="color:rgb(219, 231, 243);"> <a class="text-decoration-none text-light" href=""
+                                target="_blank">Roadside Assistance - 1 (800) 835-0221</a></p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin:10px 0;">
+            <h5 class="text-center " style="margin: 0; color: rgb(191, 154, 80)">
+                <b>© INFINITI 2026. All Rights Reserved. Designed By Eng/ SALLY ABO MANSOUR</b>
+            </h5><br>
+        </div>
+    </footer>
+
+</body>
+
+</html>

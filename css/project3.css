@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fab:hover {
+    color: #ffffff;
+    
+        opacity: 0.5;
+}
+
+.fab {
+    margin: auto;
+    margin: 4px;
+    background-color: rgb(124, 86, 10);
+    color:  #ffffff;
+        border: 1px solid #000000;
+    font-size: 35px;
+}
+
+#hover-ul li a:hover {
+    color: white;
+    background-color: #a8802f;
+}
+
+form .btn:hover {
+    background: #020b24;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+form .btn {
+    color: #ffffff;
+    background: #020b24;
+    border: 1px solid #e3c790;
+}
+
+.modal-footer .btn {
+    color: black;
+    background-color: rgb(191, 154, 80);
+}
+.modal-footer .btn:hover {
+    color: black;
+        border: 1px solid #e3c790;
+    background-color: rgb(255, 255, 255);
+}
+
+.search:hover {
+    background-color: #000000;
+    border: 1px solid #e3c790;
+}
+
+.carousel-item img {
+    object-fit: cover;
+
+    height: 100%;
+}
+
+.carousel-caption .btn {
+        background-color: #000000;
+            color: #ffffff;
+            border: 1px solid #e3c790;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #e3c790;
+
+}
+
+.navbar-toggler-icon {
+    font-size: 13px;
+}
+
+#sec1:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(191, 154, 80);
+
+}
+
+#sec1 {
+    background: #020b24;
+    color: #ffffff;
+    z-index: 300;
+    border: 2px solid rgb(191, 154, 80);
+}
+.hr {
+    width: 100%;
+    height: 10%;
+    color: #000000;
+}
+
+.icons {
+    z-index: 10000;
+}
+
+#comment {
+    border: 2px solid #e6c686;
+}
+
+#comment:focus {
+    border: 2px solid #000000;
+}
+
+.ball {
+    background-image: url('2026-infiniti-qx60-exterior-profile.webp');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.ball11 {
+    background-image: url('2026-infiniti-qx60-exterior-profile.webp');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    background-position:center center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.ball-2{
+    background-image: url('myinfiniti-app-xl-v2.webp');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 50vh;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+        .ball-22 {
+            background-image: url('myinfiniti-app-xl-v2.webp');
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 50vh;
+            background-position:right;
+            background-size:cover;
+            background-attachment: fixed;
+        }
+
+
+.card-header p {
+    font-weight: 300;
+    color: #ae780b;
+    font-size: 25px;
+}
+
+.ui {
+    position: relative;
+}
+
+.ui::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 223;
+        background-color: rgba(84, 74, 0, 0.193);
+    width: 0;
+    transition: 1s;
+    height: 0;
+}
+
+.ui:hover::after {
+    width: 100%;
+    opacity: 1;
+    transition: 1s;
+    height: 100%;
+}
+
+.ui::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+right: 0;    opacity: 0;
+        background-color: rgba(84, 74, 0, 0.193);
+    z-index: 223;
+    width: 0;
+    transition: 1s;
+    height: 0;
+}
+.fa-magnifying-glass{
+    color: white;
+    background-color: #020b24;
+    font-size:100px;
+}
+
+.ui:hover::before {
+    width: 100%;
+    opacity: 1;
+    transition: 1s;
+    height: 100%;
+}
+body{
+    background-image: url('Horizon_Graphic_PFA_INFINITI_Gold_1500.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.accordion-button::after,
+.accordion-button:not(.collapsed-header)::after {
+    background-image: url("Horizon_Graphic_PFA_INFINITI_Gold_1500.webp") !important;
+}
+.img-bord{
+    position: relative;
+    z-index: 50;
+}
+.pil-img:hover {
+    transform: scale(0.9);
+    border: 3px solid #020b24;
+}
+.card-img-overlay{
+        position: absolute;
+                    background-color: rgba(0, 0, 0, 0.5);
+                background-size: 100% 100%;
+                width: 100%;
+                height: 100%;
+
+z-index: 20;    }
+.vui b {
+    font-weight: 400;
+    color: #ae780b;
+    font-size: 25px;
+}
+.special-image1 {
+    background-image: url('86534.webp');
+    background-size: cover;
+    background-position: center;
+}
+.yuis{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+        overflow: hidden;
+
+}
+.aui{
+            overflow: hidden;
+                                    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+}
+.card:hover .special-image1,.card:hover .special-image2,.card:hover .special-image3,.card:hover .special-image4 {
+    transform: scale(1.05);
+}
+.special-image2 {
+    background-image: url('gmxsd,.webp');
+        background-size: cover;
+            
+            background-position: center;
+}
+
+.special-image3 {
+    background-image: url('2026-infiniti-qx60-exterior-front.webp');
+        background-size: cover;
+            background-position: center;
+}
+
+.special-image4 {
+    background-image: url('2025-infiniti-qx50-exterior-v3-xl.jpg');
+        background-size: cover;
+            background-position: center;
+}
+.special-image {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;}
+        .bmw {
+            position: relative;
+            height: 250px;
+        }
+        .special-card2:hover
+{
+    transform: scale(1.05);
+    transition: 0.6s linear;
+}    
